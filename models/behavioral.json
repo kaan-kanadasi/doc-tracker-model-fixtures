@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "states": [
+    {
+      "file": "src/orders.py",
+      "id": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"open\"]",
+      "kind": "state",
+      "machine": "orders:Order",
+      "value": "open",
+      "variable": "self.status"
+    },
+    {
+      "file": "src/orders.py",
+      "id": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"paid\"]",
+      "kind": "state",
+      "machine": "orders:Order",
+      "value": "paid",
+      "variable": "self.status"
+    }
+  ],
+  "transitions": [
+    {
+      "file": "src/orders.py",
+      "guard": "self.status == 'open'",
+      "id": "transition:[\"src/orders.py\",\"orders:Order.advance\",\"state:[\\\"src/orders.py\\\",\\\"orders:Order\\\",\\\"self.status\\\",\\\"open\\\"]\",\"state:[\\\"src/orders.py\\\",\\\"orders:Order\\\",\\\"self.status\\\",\\\"paid\\\"]\"]",
+      "kind": "transition",
+      "source": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"open\"]",
+      "target": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"paid\"]",
+      "trigger": "orders:Order.advance"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "rules": [
+    {
+      "owners": [
+        "owner@fixture.example"
+      ],
+      "pattern": "src/audit.py"
+    },
+    {
+      "owners": [
+        "owner@fixture.example"
+      ],
+      "pattern": "src/orders.py"
+    },
+    {
+      "owners": [
+        "owner@fixture.example"
+      ],
+      "pattern": "src/store.py"
+    }
+  ],
+  "schema_version": 1
+}
