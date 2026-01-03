@@ -9,6 +9,7 @@ class Order:
         self.order_id = order_id
         self.status = "open"
 
+    # moves the order one step on
     def advance(self):
         if self.status == "open":
             self.status = "paid"
