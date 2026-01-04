@@ -4,3 +4,7 @@
 
 def record(event):  # keeps the event as given
     return event
+
+
+def forget(event):
+    return None
