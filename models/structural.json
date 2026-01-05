@@ -32,6 +32,16 @@
       "async": false,
       "decorators": [],
       "file": "src/audit.py",
+      "id": "audit:forget",
+      "kind": "function",
+      "params": [
+        "event"
+      ]
+    },
+    {
+      "async": false,
+      "decorators": [],
+      "file": "src/audit.py",
       "id": "audit:record",
       "kind": "function",
       "params": [
