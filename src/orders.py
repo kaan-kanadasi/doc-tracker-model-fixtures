@@ -1,6 +1,5 @@
 """An order and its lifecycle."""
 
-import audit
 from store import OrderStore
 
 
