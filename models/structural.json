@@ -2,13 +2,6 @@
   "edges": [
     {
       "file": "src/orders.py",
-      "id": "imports:orders->audit",
-      "kind": "imports",
-      "source": "orders",
-      "target": "audit"
-    },
-    {
-      "file": "src/orders.py",
       "id": "imports:orders->store",
       "kind": "imports",
       "source": "orders",
