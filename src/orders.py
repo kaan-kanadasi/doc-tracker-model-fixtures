@@ -12,3 +12,5 @@ class Order:
     def advance(self):
         if self.status == "open":
             self.status = "paid"
+        elif self.status == "paid":
+            self.status = "shipped"
