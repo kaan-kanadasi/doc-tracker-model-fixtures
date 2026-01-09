@@ -16,6 +16,14 @@
       "machine": "orders:Order",
       "value": "paid",
       "variable": "self.status"
+    },
+    {
+      "file": "src/orders.py",
+      "id": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"shipped\"]",
+      "kind": "state",
+      "machine": "orders:Order",
+      "value": "shipped",
+      "variable": "self.status"
     }
   ],
   "transitions": [
@@ -26,6 +34,15 @@
       "kind": "transition",
       "source": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"open\"]",
       "target": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"paid\"]",
+      "trigger": "orders:Order.advance"
+    },
+    {
+      "file": "src/orders.py",
+      "guard": "self.status == 'paid'",
+      "id": "transition:[\"src/orders.py\",\"orders:Order.advance\",\"state:[\\\"src/orders.py\\\",\\\"orders:Order\\\",\\\"self.status\\\",\\\"paid\\\"]\",\"state:[\\\"src/orders.py\\\",\\\"orders:Order\\\",\\\"self.status\\\",\\\"shipped\\\"]\"]",
+      "kind": "transition",
+      "source": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"paid\"]",
+      "target": "state:[\"src/orders.py\",\"orders:Order\",\"self.status\",\"shipped\"]",
       "trigger": "orders:Order.advance"
     }
   ]

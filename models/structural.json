@@ -118,6 +118,14 @@
         "self",
         "key"
       ]
+    },
+    {
+      "async": false,
+      "decorators": [],
+      "file": "src/store.py",
+      "id": "store:new_store",
+      "kind": "function",
+      "params": []
     }
   ],
   "schema_version": 1

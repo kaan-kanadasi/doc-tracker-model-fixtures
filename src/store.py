@@ -12,3 +12,7 @@ class Store:
 class OrderStore(Store):
     def put(self, order):
         self.items[order.order_id] = order
+
+
+def new_store():
+    return OrderStore()
