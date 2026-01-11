@@ -6,13 +6,6 @@
       "kind": "imports",
       "source": "orders",
       "target": "store"
-    },
-    {
-      "file": "src/store.py",
-      "id": "inherits:store:OrderStore->store:Store",
-      "kind": "inherits",
-      "source": "store:OrderStore",
-      "target": "store:Store"
     }
   ],
   "nodes": [
